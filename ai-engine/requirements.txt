@@ -1,0 +1,18 @@
+# Tested with Python 3.12.10 on Windows 11
+fastapi==0.143.3
+uvicorn[standard]==0.54.0
+pydantic==2.14.1
+python-multipart==0.0.32
+scikit-learn==1.9.1
+joblib==1.6.0
+pandas==3.0.6
+numpy==2.5.4
+opencv-python-headless==5.0.0.93
+rapidocr-onnxruntime==1.4.4
+pillow==12.3.0
+# Speech-to-text (model tiny.en downloads once from Hugging Face on first video). av must stay <17 for faster-whisper 1.2.1.
+faster-whisper==1.2.1
+av==16.1.0
+# tests
+pytest==9.1.1
+httpx==0.28.1

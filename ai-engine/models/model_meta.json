@@ -1,0 +1,14 @@
+{
+  "modelVersion": "liar-tfidf-lr-20261016",
+  "trainedAt": "2026-10-16T16:57:33.839098+00:00",
+  "dataset": "LIAR (binary mapping)",
+  "trainCsvSha256": "963c2609ce15e5f3b9d114b81329268c478d79534369e0f0f2c0637a6cb10729",
+  "trainRows": 8136,
+  "selectedC": 1,
+  "validationMacroF1": 0.6500997047206349,
+  "classes": [
+    "FAKE",
+    "REAL"
+  ],
+  "sklearnVersion": "1.9.1"
+}

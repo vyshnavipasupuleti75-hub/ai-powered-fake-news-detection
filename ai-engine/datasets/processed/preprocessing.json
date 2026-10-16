@@ -1,0 +1,44 @@
+{
+  "dataset": "LIAR (Wang, ACL 2017)",
+  "task": "binary statement-level classification",
+  "label_mapping": {
+    "pants-fire": "FAKE",
+    "false": "FAKE",
+    "barely-true": "FAKE",
+    "mostly-true": "REAL",
+    "true": "REAL"
+  },
+  "excluded_labels": [
+    "half-true"
+  ],
+  "features": "statement text only",
+  "splits": {
+    "train": {
+      "raw_rows": 10269,
+      "after_label_mapping": 8146,
+      "final_rows": 8136,
+      "class_counts": {
+        "FAKE": 4489,
+        "REAL": 3647
+      }
+    },
+    "valid": {
+      "raw_rows": 1284,
+      "after_label_mapping": 1036,
+      "final_rows": 1031,
+      "class_counts": {
+        "FAKE": 612,
+        "REAL": 419
+      }
+    },
+    "test": {
+      "raw_rows": 1283,
+      "after_label_mapping": 1016,
+      "final_rows": 1013,
+      "class_counts": {
+        "FAKE": 554,
+        "REAL": 459
+      }
+    }
+  }
+}

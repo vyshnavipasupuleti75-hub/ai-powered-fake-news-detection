@@ -1,0 +1,2 @@
+const mongoose = require('mongoose');
+module.exports = mongoose.model('AuditLog', new mongoose.Schema({ actorId: { type: mongoose.Schema.Types.ObjectId, ref: 'User', default: null }, action: { type: String, required: true }, resourceType: String, resourceId: String, metadata: { type: mongoose.Schema.Types.Mixed, default: {} }, timestamp: { type: Date, default: Date.now, index: true } }, { versionKey: false }));
